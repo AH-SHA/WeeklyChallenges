@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace ChallengesWithTestsMark8
 {
@@ -7,52 +8,115 @@ namespace ChallengesWithTestsMark8
     {
         public bool CharacterIsALetter(char c)
         {
-            throw new NotImplementedException();
+            if (c >= 'A' && c <= 'Z' || c >= 'a' && c <= 'z') ;
+            {
+                return true;
+            }
+            return false;
+            
+
+
+
         }
 
         public bool CountOfElementsIsEven(string[] vals)
         {
-            throw new NotImplementedException();
+            if (vals.Length % 2 == 0);
+            {
+                return true;
+            }
+            return false;
         }
 
         public bool IsNumberEven(int number)
         {
-            throw new NotImplementedException();
+            if (number % 2 == 0)
+            {
+                return true;
+            }
+            return false;
         }
 
         public bool IsNumberOdd(int num)
         {
-            throw new NotImplementedException();
+            if (num % 2 == 0)
+            {
+                return true;
+            }
+            return false;
         }
 
         public double SumOfMinAndMax(IEnumerable<double> numbers)
         {
-            throw new NotImplementedException();
+            var min = numbers.MaxValue;
+            var max = numbers.MinValue;
+            return min + max;
         }
 
         public int GetLengthOfShortestString(string str1, string str2)
         {
-            throw new NotImplementedException();
+            var len1 = str1.Length;
+            var len2 = str2.Length;
+            var len = Math.Min(len1, len2);
+            return len;
         }
 
         public int Sum(int[] numbers)
         {
-            throw new NotImplementedException();
+            return numbers.Sum(x=>numbers.Sum(y => y));
         }
 
         public int SumEvens(int[] numbers)
         {
-            throw new NotImplementedException();
-        }
+            int[] SumEvens;
+            foreach (var x in numbers)
+                if (x % 2 == 0)
+                {
+                    SumEvens = new[] {x};
+                    
+                }
+            int sumAnswer = SumEvens.Sum();
+            Console.WriteLine(sumAnswer);
+         }
 
         public bool IsSumOdd(List<int> numbers)
         {
-            throw new NotImplementedException();
+            
+            List<int> SumOdd = new List<int> ();
+            
+            foreach (var y in numbers)
+                if (y % 2 != 0)
+                {
+                    SumOdd.Add(y);
+                }
+
+            int sumAnswerOdd = SumOdd.AsQueryable().Sum();
+            if (sumAnswerOdd % 2 != 0)
+            {
+                Console.WriteLine(sumAnswerOdd);
+            }
+            
+            
         }
 
         public long CountOfPositiveOddsBelowNumber(long number)
         {
-            throw new NotImplementedException();
+            
+            List <long> counted = new List<long>();
+            var sizeOfCounted = counted.Count;  
+            long i;
+            for (i = 0; i < number; i++)
+            {
+                if (i > 0 && i % 2 != 0)
+                {
+                    counted.Add(i);
+                    return counted.Count;
+                    
+                }
+
+            }
+
+            Console.WriteLine("$ Count of Positive Odds is {sizeOfCounted}");
         }
     }
 }
