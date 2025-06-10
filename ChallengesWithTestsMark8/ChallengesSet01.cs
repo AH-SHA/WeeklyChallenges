@@ -44,12 +44,17 @@ namespace ChallengesWithTestsMark8
 
         public string GetGreeting(string nameOfPerson)
         {
-            return GetGreeting(nameOfPerson);
+            if (string.IsNullOrWhiteSpace(nameOfPerson))  // || if (nameOfPerson = "") 
+            {
+                return "Hello!";
+            }
+                return $"Hello, {nameOfPerson}!";
+            
         }
 
         public string GetHey()
         {
-            return GetHey();
-        }
+            return "HEY!";
+        } 
     }
 }
