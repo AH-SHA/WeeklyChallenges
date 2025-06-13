@@ -44,22 +44,50 @@ namespace ChallengesWithTestsMark8
 
         public int SumElementsThatFollowAnEven(int[] numbers)
         {
-            throw new NotImplementedException();
+            
+            int i;
+            for (i = 0; i < numbers.Length; i++)
+            {
+                if (numbers[i] % 2 == 0)
+                {
+                    return numbers.Sum((numbers.Length) - (numbers.IndexOf([i])));
+                }
+            }
         }
 
         public string TurnWordsIntoSentence(string[] words)
         {
-            throw new NotImplementedException();
+            words.Concat(words);
         }
 
         public double[] GetEveryFourthElement(List<double> elements)
         {
-            throw new NotImplementedException();
+            int initialIndex =  IndexOf(elements);
+
+            for (initialIndex = 0; initialIndex < elements.Count; initialIndex+=4)
+            {
+                //return elements.Skip(4).Take(4).ToArray();
+
+                return initialIndex;
+                
+                var every4th = initialIndex.ToArray();
+                return every4th;
+            }
+
+
         }
 
         public bool TwoDifferentElementsInArrayCanSumToTargetNumber(int[] nums, int targetNumber)
         {
-            throw new NotImplementedException();
+            
+            if (nums.Sum() == targetNumber)
+            {
+                return true;
+            }
+                return false;
+            
+            
+            
         }
     }
 }
