@@ -19,7 +19,7 @@ namespace ChallengesWithTestsMark8
 
         public void ChangeNamesOfBusinessesWithNoRevenueTo_CLOSED(Business[] businesses)
         {
-            throw new NotImplementedException();
+            
             if (Business.GetValue(businesses) = 0)
             {
                 return businesses.Replace(CLOSED);
@@ -32,9 +32,8 @@ namespace ChallengesWithTestsMark8
 
         public bool IsAscendingOrder(int[] numbers)
         {
-            throw new NotImplementedException();
             var numAsc = numbers.OrderBy(x => x);
-            if (numAsc = numbers)
+            if (numAsc == numbers)
             {
                 return true;
             }
