@@ -1,6 +1,17 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=30c9578f_002D3cb0_002D4676_002D984b_002Def76575c6188/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="ChallengesSet02Tests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=282731b7_002D4d7d_002D4ec8_002Dad71_002Dd2ebdabea51a/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="All tests from ChallengesSet03Tests.cs" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;ProjectFile&gt;5FA16DCD-C667-C72F-B0CF-EDE9359CFB2A/f:ChallengesSet03Tests.cs&lt;/ProjectFile&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=656b7114_002D2509_002D4b79_002D8b33_002Db6483b07aae4/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="ChallengesSet03Tests #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
-    &lt;TestId&gt;xUnit::5FA16DCD-C667-C72F-B0CF-EDE9359CFB2A::net8.0::ChallengesWithTestsMark8.Tests.ChallengesSet02Tests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::5FA16DCD-C667-C72F-B0CF-EDE9359CFB2A::net8.0::ChallengesWithTestsMark8.Tests.ChallengesSet03Tests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=e71156a1_002D2569_002D435f_002D815d_002D3dd88b4444a6/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="All tests from ChallengesSet03Tests.cs #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;ProjectFile&gt;5FA16DCD-C667-C72F-B0CF-EDE9359CFB2A/f:ChallengesSet03Tests.cs&lt;/ProjectFile&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=f43ddfba_002D0424_002D412c_002Da648_002D8146616ab31d/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="ChallengesSet03Tests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::5FA16DCD-C667-C72F-B0CF-EDE9359CFB2A::net8.0::ChallengesWithTestsMark8.Tests.ChallengesSet03Tests&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
