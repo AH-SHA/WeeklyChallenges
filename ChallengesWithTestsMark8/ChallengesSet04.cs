@@ -23,9 +23,10 @@ namespace ChallengesWithTestsMark8
                     subList.Append(number).ToArray();
                 }
                     
-                
-                return newListA - subList.Sum();
             }
+            
+            return newListA - subList.Sum();
+            
             
             //Additional Methods
             // return numbers.Where(x => x % 2 == 0).Sum() -  numbers.Where(x => x % 2 != 0).Sum();
@@ -34,6 +35,10 @@ namespace ChallengesWithTestsMark8
 
         public int GetLengthOfShortestString(string str1, string str2, string str3, string str4)
         {
+            var stringList = new List<int> {str1.Length, str2.Length, str3.Length,  str4.Length};
+            return stringList.Min();
+            
+            
             //Additional Method
             /*var newStr1 = str1.ToList();
             var newStr2 = str2.ToList();
@@ -41,9 +46,8 @@ namespace ChallengesWithTestsMark8
             var newStr4 = str4.ToList();
 
             return Min(newStr1.Count(), newStr2.Count(),newStr3.Count(),newStr4.Count());   */
-
-            var stringList = new List<int> {str1.Length, str2.Length, str3.Length,  str4.Length};
-            return stringList.Min();
+            
+            
             
         }
 
@@ -66,16 +70,18 @@ namespace ChallengesWithTestsMark8
 
         public void ChangeBusinessNameTo_TrueCoders(Business biz)
         {
-            //Alternate Method
-            // char[] busName = biz.ToCharArray();
-            // return busName.Replace(TrueCoders);
-            
             biz.Name = "TrueCoders"; 
             
             //When a method's return type is "void", you do not have to use the keyword "return" when using a
-                  //parameter of that method.  You are just changing something or displaying the result, so you 
+                  //parameter of that method.  You are just changing something or displaying the result, so you
+                  //don't need to "return" anything
             //Tip - when a method has its own "<Class>" you need to try to view the properties for the method first 
                 //before writing code for the parameter.
+                
+            //Additional Method
+            // char[] busName = biz.ToCharArray();
+            // return busName.Replace(TrueCoders);    
+                
         }
 
         public bool CouldFormTriangle(int sideLength1, int sideLength2, int sideLength3)
@@ -111,7 +117,7 @@ namespace ChallengesWithTestsMark8
 
         public bool MajorityOfElementsInArrayAreNull(object[] objs)
         {
-            return (objs.Count(null) > (objs.Length/2 + 1)) ? true : false;
+           return ((objs.Count(null)) > (objs.Length/2 + 1)) ? true: false;
         }
 
         public double AverageEvens(int[] numbers)
@@ -136,9 +142,9 @@ namespace ChallengesWithTestsMark8
 
             return numList.Average();
             
-            //Additional Methods
-            //var num = numbers.Where(x => x % 2 == 0);
-            //return num.Average();
+            //Additional Method
+            // var num = numbers.Where(x => x % 2 == 0);
+            // return num.Average();
 
 
         }
