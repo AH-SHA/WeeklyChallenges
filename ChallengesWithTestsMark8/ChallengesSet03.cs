@@ -8,9 +8,6 @@ namespace ChallengesWithTestsMark8
     {
         public bool ArrayContainsAFalse(bool[] vals)
         {
-            //var hasFalse = vals.Contains(false);
-            //var hasTrue = vals.Contains(true);
-
             if (vals == null || vals.Length == 0)
             {
                 return false;
@@ -28,27 +25,34 @@ namespace ChallengesWithTestsMark8
 
             return false;
 
-            // if (vals != null && hasFalse != true)
-            // {
-            //     return false;
-            // }
-            // if (hasFalse == true)
-            // {
-            //     return true;
-            // }
-            //
+            
 
-            foreach (var item in vals)
-            {
-                if (item == false)
+            //Additional Method
+            /* foreach (var item in vals)
                 {
-                    return true;
-                }
+                    if (item == false)
+                    {
+                        return true;
+                    }
 
+                        return false;
+                }    */
+    
+            //Additional Method
+            // return vals != null && vals.Length != 0 && vals.Contains(false);
+            
+            //Additional Method
+            /* var hasFalse = vals.Contains(false);
+            var hasTrue = vals.Contains(true);
+            if (vals != null && hasFalse != true)
+            {
                 return false;
             }
-
-            return vals != null && vals.Length != 0 && vals.Contains(false);
+            if (hasFalse == true)
+            {
+                return true;
+            }  */
+            
 
         }
 
@@ -64,6 +68,7 @@ namespace ChallengesWithTestsMark8
             }
 
             foreach (var item in numbers)
+                
                 if (item % 2 != 0)
                 {
                     newNum.Add(item);
@@ -74,22 +79,18 @@ namespace ChallengesWithTestsMark8
                 return true;
             }
 
-            return false;
+                return false;
+                
         }
 
         public bool PasswordContainsUpperLowerAndNumber(string password)
         {
+            
             return password.Any(char.IsUpper) && password.Any(char.IsLower) && password.Any(char.IsNumber);
 
 
-            var passConvert = (Console.ReadLine());
-            char[] passConvArray = passConvert.ToCharArray();
-            //passConvert.ToCharArray();
-
-            bool upper = char.IsUpper(passConvArray());
-            bool lower = char.IsLower(passConvArray());
-            bool hasNumber = char.IsNumber(passConvArray());
-
+           //Additional Method
+           /* Method 1
             bool upper2 = false;
             bool lower2 = false;
             bool hasNumber2 = false;
@@ -116,62 +117,48 @@ namespace ChallengesWithTestsMark8
                     return true;
                 }
 
-                return false;
+                return false;   */
 
 
-
-            }
-
-            //var passConvert2 = passConvert.Any();
-            List<char> passEntry = new List<char>();
-
-            foreach (var item in passConvArray)
-            {
-                if (char.IsUpper(passConvArray[item]) || char.IsLower(passConvArray[item]) ||
-                    char.IsNumber(passConvArray[item]))
-                {
-                    return true;
-                }
-
-                return false;
-                passEntry.Add(item);
-            }
-
-            if (passEntry.Count > 0)
-            {
-                return false;
-            }
 
         }
 
+           
+        
+
         public char GetFirstLetterOfString(string val)
         {
-            var userInput = Console.ReadLine();
-            userInput = new string(userInput.ToArray());
+            var userInput = val.ToArray();
             return userInput[0];
+            
+            //Additional Methods
+            
+           //Method 1:   return val[0];
 
-            return val[0];
-
-            return val.First();
+            //Method 2:  return val.First();
 
         }
 
         public char GetLastLetterOfString(string val)
         {
-            var userInput2 = Console.ReadLine();
-            userInput2 = new string(userInput2.ToArray());
-            return userInput2.Length - 1;
+            
+            var userInput2 = val.ToArray();
+            return userInput2[userInput2.Length - 1];
 
+            
+            //Additional Methods
+            
+            /* Method 1:
+             
+             val = val.ToArray();
 
-            val = val.ToArray();
+            return val[val.Length - 1];  */
 
-            return val[val.Length - 1];
+            // Method 2: return val.Last();
 
-            return val.Last();
+            // Method 3:  return val[^1];
 
-            return val[^1];
-
-            /* the caret symbol is an operator that is a placeholder exempting all characters except
+            /* the caret symbol (^) is an operator that is a placeholder, which exempts all characters except
             the amount indicated by the digit in brackets */
 
         }
@@ -187,7 +174,7 @@ namespace ChallengesWithTestsMark8
             return dividend / divisor;
 
             //Additional Method
-            return divisor == 0 ? 0 : dividend / divisor;
+            // return divisor == 0 ? 0 : dividend / divisor;
 
 
 
@@ -196,15 +183,12 @@ namespace ChallengesWithTestsMark8
         public int LastMinusFirst(int[] nums)
         {
             int digitLast = (nums.Length - 1);
-            //(nums.Length-1) - (nums[0]);
             int digitFirst = nums[0];
             return digitLast - digitFirst;
 
             //Additional Methods
-
-            return nums[^1] - nums[0];
-
-            return nums[nums.Length - 1] - nums[0];
+            // Method 1: return nums[^1] - nums[0];  OR
+            // Method 2: return nums[nums.Length - 1] - nums[0];
 
         }
 
@@ -215,20 +199,24 @@ namespace ChallengesWithTestsMark8
         public int[] GetOddsBelow100()
         {
 
+            
+            return Enumerable.Range(1, 100).Where(x => x % 2 != 0).ToArray<int>();
+            
+            //Alternative Method
+            /* var oddsBelow100 = new int[] { };
+          
             int i;
-            var oddsBelow100 = new int[] { };
-
-            for (i = 1; i <= 100; i += 2)
+            for (i = 1; i < 100; i+=2)
             {
 
-                return oddsBelow100 = oddsBelow100.Append(i).ToArray();
+                return oddsBelow100.Append(i).ToArray();
 
 
-            }
+            } */
 
 
-            //Additional method
-            return Enumerable.Range(1, 100).Where(x => x % 2 != 0).ToArray<int>();
+           
+            
 
 
 
@@ -236,12 +224,17 @@ namespace ChallengesWithTestsMark8
 
         public void ChangeAllElementsToUppercase(string[] words)
         {
-            //return words.ToUpper[words];
+            
 
             for (int i = 0; i < words.Length; i++)
             {
                 words[i] = words[i].ToUpper();
             }
+            
+            
+            //Additional Method
+            //return words.ToUpper[words];
+            
 
         }
     }

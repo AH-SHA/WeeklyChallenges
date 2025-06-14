@@ -61,19 +61,20 @@ namespace ChallengesWithTestsMark8
 
         public double[] GetEveryFourthElement(List<double> elements)
         {
-            int initialIndex =  IndexOf(elements);
-
-            for (initialIndex = 0; initialIndex < elements.Count; initialIndex+=4)
+            double initialIndex =  elements.IndexOf(elements[0]);
+            var i;
+            for (i = 0; i < elements.Count; i += 4)
             {
-                //return elements.Skip(4).Take(4).ToArray();
+                
 
                 return initialIndex;
                 
-                var every4th = initialIndex.ToArray();
-                return every4th;
+                var everyFourth = initialIndex(initialIndex.ToArray(i));
+                return everyFourth;
             }
 
-
+            //Alternative Methods
+            //return elements.Skip(4).Take(4).ToArray();
         }
 
         public bool TwoDifferentElementsInArrayCanSumToTargetNumber(int[] nums, int targetNumber)
