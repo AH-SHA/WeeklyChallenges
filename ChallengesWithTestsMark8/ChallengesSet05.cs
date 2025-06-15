@@ -52,14 +52,14 @@ namespace ChallengesWithTestsMark8
             {
                 return false;
             }
-            for (var i = 0; i < numbers.Length; i++)
+            for (var i = 1; i < numbers.Length; i++)
             { 
-                if (numbers[i] < numbers[i + 1])
+                if (numbers[i] < numbers[i - 1])
                 {
                     return false;
                 }
             }
-                return true;
+            return true;
                 
                 //Sort  Ascending order Using LINQ
                 //var numAsc = numbers.OrderBy(x => x);

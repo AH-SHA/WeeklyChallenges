@@ -58,15 +58,21 @@ namespace ChallengesWithTestsMark8
 
         public bool IsSumOfOddsOdd(IEnumerable<int> numbers)
         {
-            var listSum = numbers.Sum();
-
-            var newNum = new List<int>();
-
-            if (numbers == null || numbers.Count() == 0)
+            
+            if (numbers == null)
             {
                 return false;
             }
+            if (numbers.Count() == 0)
+            {
+                return false;
+            }
+            
+            var listSum = numbers.Sum();
 
+            var newNum = new List<int>();
+            
+            
             foreach (var item in numbers)
                 
                 if (item % 2 != 0)
@@ -74,11 +80,10 @@ namespace ChallengesWithTestsMark8
                     newNum.Add(item);
                 }
 
-            if (newNum.Sum() % 2 != 0)
+            if (numbers != null && newNum.Sum() % 2 != 0)
             {
                 return true;
             }
-
                 return false;
                 
         }
@@ -182,13 +187,15 @@ namespace ChallengesWithTestsMark8
 
         public int LastMinusFirst(int[] nums)
         {
-            int digitLast = (nums.Length - 1);
-            int digitFirst = nums[0];
-            return digitLast - digitFirst;
+            return (nums[nums.Length - 1] - nums[0]);
 
             //Additional Methods
             // Method 1: return nums[^1] - nums[0];  OR
-            // Method 2: return nums[nums.Length - 1] - nums[0];
+            // Method 2
+            /* Re-factor
+            var digitLast = nums[nums.Length - 1];
+            var digitFirst = nums[0];
+            return digitLast - digitFirst;  */
 
         }
 

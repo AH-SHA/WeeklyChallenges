@@ -1,9 +1,76 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
 	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003AInt32_002Ecs_002Fl_003A_002E_002E_003F_002E_002E_003FAppData_003FRoaming_003FJetBrains_003FRider2025_002E1_003Fresharper_002Dhost_003FSourcesCache_003Fde7177e8a31c1e501222daf218f2e9532ff54cdb767595dc7e94cc73c8e95f1_003FInt32_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=937b1d00_002D9ff6_002D44dc_002D9d23_002D5b72acf6a9d1/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="ChallengesSet03Tests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=07d80941_002D927a_002D441a_002Db506_002Daf564c0874b7/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="MaxConsecutiveCount" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
-    &lt;TestId&gt;xUnit::5F6EDB8F-2166-447C-BACA-784679AC4459::net8.0::ChallengesWithTestsMark8.Tests.ChallengesSet03Tests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::5F6EDB8F-2166-447C-BACA-784679AC4459::net8.0::ChallengesWithTestsMark8.Tests.ChallengesSet06Tests.MaxConsecutiveCount&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=08aa3e34_002D1777_002D4a05_002Db47f_002Dd6d38bc0b935/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="IsPrimeNumber" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::5F6EDB8F-2166-447C-BACA-784679AC4459::net8.0::ChallengesWithTestsMark8.Tests.ChallengesSet06Tests.IsPrimeNumber&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=304e4ea9_002Da089_002D43ac_002D96f0_002D7e656463efbf/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="LastUniqueIndex" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::5F6EDB8F-2166-447C-BACA-784679AC4459::net8.0::ChallengesWithTestsMark8.Tests.ChallengesSet06Tests.LastUniqueIndex&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=357457ff_002Dacad_002D4901_002D8201_002De784f435e8ae/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="GetEveryNthElement_List" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Solution /&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=483ef611_002Da6a2_002D43be_002Dab8e_002D8dd3c143827d/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="ChallengesSet05Tests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::5F6EDB8F-2166-447C-BACA-784679AC4459::net8.0::ChallengesWithTestsMark8.Tests.ChallengesSet05Tests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=4cef3cc6_002D4a32_002D47eb_002D93ca_002Dad812c2e73ff/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="ChallengesSet06Tests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::5F6EDB8F-2166-447C-BACA-784679AC4459::net8.0::ChallengesWithTestsMark8.Tests.ChallengesSet06Tests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=4d0f78fb_002D73de_002D42b8_002Db151_002Dd54090ba2f2f/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsLocked="True" Name="All tests from Solution #5" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Solution /&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=794131da_002Db877_002D481a_002D8861_002D90d563adaf59/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="All tests from Solution" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Solution /&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=815eab64_002Df64f_002D48a4_002D8866_002D23f72a758f01/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="All tests from Solution #4" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Solution /&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=9ed27ca4_002D25ce_002D42b1_002D9c5f_002Db4f2f6e972bf/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="All tests from Solution #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Solution /&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=d5e9c3c8_002D61cc_002D4927_002Db414_002D4cc603c178ba/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="All tests from Solution #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Solution /&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=d8564bb1_002D5585_002D486b_002Dad7d_002Dabfe484f8258/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="GetEveryNthElement_List #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::5F6EDB8F-2166-447C-BACA-784679AC4459::net8.0::ChallengesWithTestsMark8.Tests.ChallengesSet06Tests.GetEveryNthElement_List&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::5F6EDB8F-2166-447C-BACA-784679AC4459::net8.0::ChallengesWithTestsMark8.Tests.ChallengesSet06Tests.GetEveryNthElement_List.GetEveryNthElement_List(numbers: [1, 2, 3, 4, 5, ...], n: 4, expected: [4, 8, 12, 16])&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::5F6EDB8F-2166-447C-BACA-784679AC4459::net8.0::ChallengesWithTestsMark8.Tests.ChallengesSet06Tests.GetEveryNthElement_List.GetEveryNthElement_List(numbers: [], n: 1, expected: [])&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::5F6EDB8F-2166-447C-BACA-784679AC4459::net8.0::ChallengesWithTestsMark8.Tests.ChallengesSet06Tests.GetEveryNthElement_List.GetEveryNthElement_List(numbers: [], n: 0, expected: [])&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::5F6EDB8F-2166-447C-BACA-784679AC4459::net8.0::ChallengesWithTestsMark8.Tests.ChallengesSet06Tests.GetEveryNthElement_List.GetEveryNthElement_List(numbers: [1], n: -1, expected: [])&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::5F6EDB8F-2166-447C-BACA-784679AC4459::net8.0::ChallengesWithTestsMark8.Tests.ChallengesSet06Tests.GetEveryNthElement_List.GetEveryNthElement_List(numbers: [1], n: 1, expected: [1])&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::5F6EDB8F-2166-447C-BACA-784679AC4459::net8.0::ChallengesWithTestsMark8.Tests.ChallengesSet06Tests.GetEveryNthElement_List.GetEveryNthElement_List(numbers: [1, 2, 3, 4, 5, ...], n: 4, expected: [4])&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::5F6EDB8F-2166-447C-BACA-784679AC4459::net8.0::ChallengesWithTestsMark8.Tests.ChallengesSet06Tests.GetEveryNthElement_List.GetEveryNthElement_List(numbers: [1, 2, 3, 4, 5, ...], n: 4, expected: [4, 8])&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::5F6EDB8F-2166-447C-BACA-784679AC4459::net8.0::ChallengesWithTestsMark8.Tests.ChallengesSet06Tests.GetEveryNthElement_List.GetEveryNthElement_List(numbers: null, n: 0, expected: [])&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::5F6EDB8F-2166-447C-BACA-784679AC4459::net8.0::ChallengesWithTestsMark8.Tests.ChallengesSet06Tests.GetEveryNthElement_List.GetEveryNthElement_List(numbers: [1, 2, 3, 4, 5, ...], n: 4, expected: [4, 8, 12])&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::5F6EDB8F-2166-447C-BACA-784679AC4459::net8.0::ChallengesWithTestsMark8.Tests.ChallengesSet06Tests.GetEveryNthElement_List.GetEveryNthElement_List(numbers: [1, 2, 3, 4, 5, ...], n: 20, expected: [])&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::5F6EDB8F-2166-447C-BACA-784679AC4459::net8.0::ChallengesWithTestsMark8.Tests.ChallengesSet06Tests.GetEveryNthElement_List.GetEveryNthElement_List(numbers: [1, 2, 3, 4, 5, ...], n: 10, expected: [10])&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::5F6EDB8F-2166-447C-BACA-784679AC4459::net8.0::ChallengesWithTestsMark8.Tests.ChallengesSet06Tests.GetEveryNthElement_List.GetEveryNthElement_List(numbers: [1, 2, 3, 4, 5, ...], n: 8, expected: [8, 16])&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::5F6EDB8F-2166-447C-BACA-784679AC4459::net8.0::ChallengesWithTestsMark8.Tests.ChallengesSet06Tests.GetEveryNthElement_List.GetEveryNthElement_List(numbers: [1, 2, 3, 4, 5], n: 1, expected: [1, 2, 3, 4, 5])&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::5F6EDB8F-2166-447C-BACA-784679AC4459::net8.0::ChallengesWithTestsMark8.Tests.ChallengesSet06Tests.GetEveryNthElement_List.GetEveryNthElement_List(numbers: [1, 2, 3, 4, 5, ...], n: 2, expected: [2, 4, 6, 8, 10, ...])&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::5F6EDB8F-2166-447C-BACA-784679AC4459::net8.0::ChallengesWithTestsMark8.Tests.ChallengesSet06Tests.GetEveryNthElement_List.GetEveryNthElement_List(numbers: [1, 2, 3, 4, 5, ...], n: 3, expected: [3, 6, 9, 12, 15])&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::5F6EDB8F-2166-447C-BACA-784679AC4459::net8.0::ChallengesWithTestsMark8.Tests.ChallengesSet06Tests.GetEveryNthElement_List.GetEveryNthElement_List(numbers: [1, 2, 3, 4, 5, ...], n: -2, expected: [])&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::5F6EDB8F-2166-447C-BACA-784679AC4459::net8.0::ChallengesWithTestsMark8.Tests.ChallengesSet06Tests.GetEveryNthElement_List.GetEveryNthElement_List(numbers: null, n: 1, expected: [])&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=e1757c9a_002D703b_002D4d4d_002Dabbc_002D0e66562578ef/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="IsPrimeNumber #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::5F6EDB8F-2166-447C-BACA-784679AC4459::net8.0::ChallengesWithTestsMark8.Tests.ChallengesSet06Tests.IsPrimeNumber&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	
 	
 	</wpf:ResourceDictionary>
