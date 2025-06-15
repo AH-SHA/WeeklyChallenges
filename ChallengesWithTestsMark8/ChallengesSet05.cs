@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.Immutable;
 using System.Linq;
 
 namespace ChallengesWithTestsMark8
@@ -16,76 +17,175 @@ namespace ChallengesWithTestsMark8
                 }
                     return 0;
         }
+        
+        //Additional Method
+        // return ((startNumber / n) + 1) * n;
 
         public void ChangeNamesOfBusinessesWithNoRevenueTo_CLOSED(Business[] businesses)
         {
-            
-            if (Business.GetValue(businesses) = 0)
+            foreach (var business in businesses)
+            if (business.TotalRevenue == 0)
             {
-                return businesses.Replace(CLOSED);
+                business.Name = "CLOSED";
             }
             
-            //char[] busName = biz.ToCharArray();
-            //return busName.Replace(TrueCoders);
+            // Tip -- You have to review the parameters in the class to build the loop and if statement.
+            //Notice, businesses is an array in this problem set, as opposed to it being one value in Challenges 04 set.
+            // Make sure you iterate through each value in the array.
+            
+            //Alternative Method
+            
+            /*
+            for(var i =0; i < businesses.Length; i++)
+            if (businesses[i].TotalRevenue == 0)
+            {
+                businesses[i].Name = "CLOSED";
+                
+            }  */
+                
             
         }
 
         public bool IsAscendingOrder(int[] numbers)
         {
-            var numAsc = numbers.OrderBy(x => x);
-            if (numAsc == numbers)
+            if (numbers == null || numbers.Length == 0)
             {
-                return true;
-            }
                 return false;
+            }
+            for (var i = 0; i < numbers.Length; i++)
+            { 
+                if (numbers[i] < numbers[i + 1])
+                {
+                    return false;
+                }
+            }
+                return true;
+                
+                //Sort  Ascending order Using LINQ
+                //var numAsc = numbers.OrderBy(x => x);
+                
+                //Refactor Code Below
+                /* int[] numASC = Array.Sort(numbers);
+            
+                if (numASC == numbers)
+                {
+                    return true;
+                }
+                return false;  */
+                
                     
         }
 
         public int SumElementsThatFollowAnEven(int[] numbers)
         {
+            if (numbers == null || numbers.Length == 0)
+            {
+                return 0;
+            }
+            int sumElements = 0;
+            for (int i = 1; i < numbers.Length; i++)
+            {
+                if (numbers[i-1] % 2 == 0)
+                {
+                    
+                    sumElements += numbers[i];
+
+                }
+            }
+            return sumElements;
             
-            int i;
+            
+            // Refactor Code Below Later
+            /*int i;
             for (i = 0; i < numbers.Length; i++)
             {
                 if (numbers[i] % 2 == 0)
                 {
-                    return numbers.Sum((numbers.Length) - (numbers.IndexOf([i])));
+                    return numbers.Sum((numbers.Length) - numbers[numbers.IndexOf([i])]);
                 }
-            }
+            }  */
+            
         }
 
         public string TurnWordsIntoSentence(string[] words)
         {
-            words.Concat(words);
+            if (words == null || words.Length == 0)
+            {
+                return string.Empty;
+                // OR  return "";
+            }
+            string sentence = string.Empty;
+            for (int i = 0; i < words.Length; i++)
+
+                foreach (string word in words)
+                {
+                    if (word.Trim().Length > 0)
+                    {
+                        sentence += word.Trim() + " ";
+                    }
+                }
+
+            if (sentence.Length == 0)
+            {
+                return string.Empty;
+            }
+            sentence = sentence.TrimEnd();
+            sentence = sentence.TrimStart();
+            sentence = sentence += ".";
+            return sentence;
+            
         }
 
         public double[] GetEveryFourthElement(List<double> elements)
         {
-            double initialIndex =  elements.IndexOf(elements[0]);
-            var i;
-            for (i = 0; i < elements.Count; i += 4)
+            if (elements == null || elements.Count == 0)
             {
-                
-
-                return initialIndex;
-                
-                var everyFourth = initialIndex(initialIndex.ToArray(i));
-                return everyFourth;
+                return Array.Empty<double>();
+                //OR new double [0];
             }
-
-            //Alternative Methods
+            
+            List<double> everyFourth = new List<double>();
+            
+            
+            for (var i = 3; i < elements.Count; i += 4)
+            {
+                everyFourth.Add(elements[i]);
+                
+            }
+            
+            return everyFourth.ToArray();
+            
+            //Alternative Method
             //return elements.Skip(4).Take(4).ToArray();
         }
 
         public bool TwoDifferentElementsInArrayCanSumToTargetNumber(int[] nums, int targetNumber)
         {
-            
+            if (nums == null || nums.Length == 0 || targetNumber == null)
+            {
+                return false;
+
+            }
+
             if (nums.Sum() == targetNumber)
             {
                 return true;
             }
                 return false;
             
+            //Additional Method
+            // Nested For-Loop
+            /* for (int i = 0; i < nums.Length; i++)
+             {
+                for (int j = i + 1; j < nums.Length; j++)
+                {
+                    if (nums[i] + nums[j] == targetNumber)
+                    {
+                        return true;
+                    }
+                } 
+            } */
+             
             
             
         }
