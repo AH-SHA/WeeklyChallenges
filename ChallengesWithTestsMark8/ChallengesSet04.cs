@@ -8,28 +8,9 @@ namespace ChallengesWithTestsMark8
     {
         public int AddEvenSubtractOdd(int[] numbers)
         {
-            
 
-            int[] addList = new int[]{};
-            int[] subList = new int[]{};
-            
-            var newList = numbers.ToList();
-            var newListA = numbers.Sum();
-            
-            foreach (int number in numbers)
-            {
-                if (number % 2 != 0)
-                {
-                    subList.Append(number).ToArray();
-                }
-                    
-            }
-            
-            return newListA - subList.Sum();
-            
-            
-            //Additional Methods
-            // return numbers.Where(x => x % 2 == 0).Sum() -  numbers.Where(x => x % 2 != 0).Sum();
+            return numbers.Where(x => x % 2 == 0).Sum() - numbers.Where(x => x % 2 != 0).Sum();
+
             
         }
 
@@ -39,7 +20,7 @@ namespace ChallengesWithTestsMark8
             return stringList.Min();
             
             
-            //Additional Method
+            //Additional Methods:
             /*var newStr1 = str1.ToList();
             var newStr2 = str2.ToList();
             var newStr3 = str3.ToList();
@@ -56,7 +37,7 @@ namespace ChallengesWithTestsMark8
             var entries = new List<int> {number1, number2, number3, number4};
             return entries.Min();
             
-            
+            //Additional Methods:
             /*var num1 = number1.ToList();
             var num2 = number2.ToList();
             var num3 = number3.ToList();
@@ -78,7 +59,7 @@ namespace ChallengesWithTestsMark8
             //Tip - when a method has its own "<Class>" you need to try to view the properties for the method first 
                 //before writing code for the parameter.
                 
-            //Additional Method
+            //Additional Methods
             // char[] busName = biz.ToCharArray();
             // return busName.Replace(TrueCoders);    
                 
@@ -91,9 +72,9 @@ namespace ChallengesWithTestsMark8
                 return false;
                 
             }
-            if (sideLength1 + sideLength2 > sideLength3
-                || sideLength2 + sideLength3 > sideLength1
-                || sideLength1 + sideLength3> sideLength2)
+            if (sideLength1 + sideLength2 <= sideLength3
+                || sideLength2 + sideLength3 <= sideLength1
+                || sideLength1 + sideLength3 <= sideLength2)
             {
                 return false;
             }
@@ -105,24 +86,57 @@ namespace ChallengesWithTestsMark8
 
         public bool IsStringANumber(string input)
         {
+            if (input == null || input.Length == 0)
+            {
+                return false;
+            }
+            var inputNew = double.TryParse(input, out double number);
+            return inputNew;
             
-            char [] inputNew2 = input.ToCharArray();
-            return inputNew2.Any(char.IsNumber);
             
             // Additional Code
-            // var inputNew = double.TryParse(input, out double number);
-            // return inputNew;
+            /* if (input == null || input.Length == 0)
+            {
+                return false;
+            }
+
+            if (input < 0.0)
+            {
+                return true;
+            }
+            char [] inputNew2 = input.ToCharArray();
+            return inputNew2.All(char.IsNumber); */
             
         }
 
         public bool MajorityOfElementsInArrayAreNull(object[] objs)
         {
-           return ((objs.Count(null)) > (objs.Length/2 + 1)) ? true: false;
+            var length = objs.Length;
+            var majority = length/2 + 1;
+            var counter = 0;
+
+            foreach (var obj in objs)
+            {
+                if (obj == null)
+                {
+                    counter++;
+                }
+            }
+            if (counter >= majority)
+            {
+                return true;
+            }
+                return false;
+                
+            
         }
 
         public double AverageEvens(int[] numbers)
         {
-            List<int> numList = new List <int> ();
+            double sum = 0;
+            double count = 0;
+            
+            //List<int> numList = new List <int> ();
 
             if (numbers == null || numbers.Length == 0)
             {
@@ -133,15 +147,24 @@ namespace ChallengesWithTestsMark8
             
             foreach (var number in numbers)
             {
-                if (number % 2 == 0)
+                
+                if ((number % 2 == 0) || (((number * -1) % 2) == 0))
                 {
-                    numList.Add(number);
-                    
+                    sum+=number;
+                    count++;
                 }
+                    
+                
             }
 
-            return numList.Average();
+            if (count > 0)
+            {
+                return sum/count;
+            }
+                return 0;
+
             
+
             //Additional Method
             // var num = numbers.Where(x => x % 2 == 0);
             // return num.Average();
@@ -151,16 +174,25 @@ namespace ChallengesWithTestsMark8
 
         public int Factorial(int number)
         {
-            number = Math.Abs(number);
-            if (number == 0) return 1;
-            while (number >= 1)
+            int factorial = 1;
+            
+            
+            if (number < 0)
             {
-                return number * (number--);
+                throw new ArgumentOutOfRangeException();
             }
-
-            return 0;
-
-
+            if (number == 0)
+            {
+                return 1;
+            }
+            
+            for(int i = number; i > 0; i--)
+            {
+                factorial *= i;
+            }
+          
+            return factorial;
+            
         }
     }
 }
