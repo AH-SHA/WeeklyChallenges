@@ -9,18 +9,11 @@ namespace ChallengesWithTestsMark8
     {
         public int GetNextNumberDivisibleByN(int startNumber, int n)
         {
-            startNumber++;
-            while (startNumber % n != 0) 
-                if (startNumber % n == 0)
-                {
-                    return startNumber;
-                }
-                    return 0;
+            return ((startNumber / n) + 1) * n;
+            
         }
         
-        //Additional Method
-        // return ((startNumber / n) + 1) * n;
-
+        
         public void ChangeNamesOfBusinessesWithNoRevenueTo_CLOSED(Business[] businesses)
         {
             foreach (var business in businesses)
@@ -114,9 +107,15 @@ namespace ChallengesWithTestsMark8
                 return string.Empty;
                 // OR  return "";
             }
-            string sentence = string.Empty;
+           
+            
+           string sentence = string.Empty;
+            
             for (int i = 0; i < words.Length; i++)
-
+                foreach (string word in words)
+                {
+                    word.Trim();
+                }
                 foreach (string word in words)
                 {
                     if (word.Trim().Length > 0)
@@ -129,8 +128,8 @@ namespace ChallengesWithTestsMark8
             {
                 return string.Empty;
             }
-            sentence = sentence.TrimEnd();
-            sentence = sentence.TrimStart();
+           
+            sentence = sentence.Trim();
             sentence = sentence += ".";
             return sentence;
             
@@ -166,26 +165,23 @@ namespace ChallengesWithTestsMark8
                 return false;
 
             }
-
-            if (nums.Sum() == targetNumber)
-            {
-                return true;
-            }
-                return false;
             
-            //Additional Method
-            // Nested For-Loop
-            /* for (int i = 0; i < nums.Length; i++)
-             {
+            for (int i = 0; i < nums.Length; i++)
+            {
                 for (int j = i + 1; j < nums.Length; j++)
                 {
                     if (nums[i] + nums[j] == targetNumber)
                     {
                         return true;
                     }
-                } 
-            } */
-             
+                        
+                }
+
+
+            }
+            
+            return false;
+            
             
             
         }
